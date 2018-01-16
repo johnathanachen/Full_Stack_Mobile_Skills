@@ -1,10 +1,10 @@
-<h1>
+<h1 align="center">
 <img width="200px" src="https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/iOS.png">
-Full Stack Mobile Skills
-</h1>
 <br>
-## SWIFT
-## XCODE
+</h1>
+
+### SWIFT
+### XCODE
 ## iOS FRONTEND
 ## iOS SYSTEM
 ## BACKEND SKILLS
