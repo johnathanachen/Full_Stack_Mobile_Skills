@@ -1,7 +1,7 @@
 <h1 align="center">
-Full Stack Mobile Skills
 <img width="200px" src="https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/iOS.png">
 <br>
+Full Stack Mobile Skills
 </h1>
 
 ## SWIFT
