@@ -1,1 +1,9 @@
-# Full_Stack_Mobile_Skills
+# Full Stack Mobile Skills
+## SWIFT
+## XCODE
+## iOS FRONTEND
+## iOS SYSTEM
+## BACKEND SKILLS
+## DEVOPS & SECURITY
+## TESTING
+## SQL & DATABASES
