@@ -24,4 +24,10 @@ Full Stack Mobile Skills
 ## BACKEND SKILLS
 ## DEVOPS & SECURITY
 ## TESTING
+### Unit Testing
+  - Importing Modules
+  - Test Case Structure
+  - Red Green Refactor
+  - Optimizing Tests
+
 ## SQL & DATABASES
