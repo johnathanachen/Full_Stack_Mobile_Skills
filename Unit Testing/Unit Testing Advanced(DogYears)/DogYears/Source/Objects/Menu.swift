@@ -48,6 +48,7 @@ struct Menu {
 	}
 	
 	mutating func loadMenu(path: String) {
+        data.removeAll()
 		if let arr = NSArray(contentsOfFile: path) {
 			for row in arr {
 				if let dic = row as? [String:String] {
@@ -55,7 +56,9 @@ struct Menu {
 					data.append(itm)
 				}
 			}
-		}
+        } else {
+            NSLog("Could not load menu file at: \(path)")
+        }
 	}
 	
 	func itemAt(row: Int) -> MenuItem? {

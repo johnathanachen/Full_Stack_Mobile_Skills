@@ -16,7 +16,6 @@
         </array>
         <array key="Didot.ttc">
             <string>Didot</string>
-            <string>Didot-Bold</string>
         </array>
         <array key="Futura.ttc">
             <string>Futura-Medium</string>
@@ -124,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="708" y="-630.13493253373315"/>
         </scene>
-        <!--Info View Controller-->
+        <!--Information-->
         <scene sceneID="Vyb-Tb-E1O">
             <objects>
-                <viewController storyboardIdentifier="InformationView" id="43e-78-LHs" customClass="InfoViewController" customModule="DogYears" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoView" id="43e-78-LHs" customClass="InfoViewController" customModule="DogYears" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9zl-wT-7Gd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,24 +154,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ikj-UT-maM"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zIa-Mp-g2C">
-                        <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="hvW-ps-3pi">
-                            <rect key="frame" x="123.5" y="5.5" width="128" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBr-CF-jcZ">
-                                    <rect key="frame" x="0.0" y="6" width="128" height="26"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
-                                    <color key="textColor" red="0.1764705882" green="0.20784313730000001" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        </view>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Information" id="zIa-Mp-g2C"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="txtInfo" destination="EGw-M8-gSW" id="NEZ-a8-iBC"/>
@@ -182,7 +164,7 @@
             </objects>
             <point key="canvasLocation" x="1501.5999999999999" y="126.38680659670166"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="Ib3-Wy-GeG">
             <objects>
                 <viewController storyboardIdentifier="SettingsView" id="XQK-9U-3Tj" customClass="SettingsViewController" customModule="DogYears" customModuleProvider="target" sceneMemberID="viewController">
@@ -730,24 +712,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7bf-1V-FVm"/>
                     </view>
-                    <navigationItem key="navigationItem" id="f4C-WE-2yX">
-                        <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="kNB-V3-63J">
-                            <rect key="frame" x="123.5" y="5.5" width="128" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zD-Ki-bfL">
-                                    <rect key="frame" x="0.0" y="6" width="128" height="26"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
-                                    <color key="textColor" red="0.1764705882" green="0.20784313730000001" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        </view>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Settings" id="f4C-WE-2yX"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="collectionView" destination="MNn-YL-ltp" id="qFJ-dq-Z14"/>
@@ -1346,7 +1311,7 @@
             </objects>
             <point key="canvasLocation" x="788" y="127.28635682158921"/>
         </scene>
-        <!--About View Controller-->
+        <!--About-->
         <scene sceneID="AQx-4A-7y9">
             <objects>
                 <tableViewController storyboardIdentifier="AboutView" id="2hT-yA-Spg" customClass="AboutViewController" customModule="DogYears" customModuleProvider="target" sceneMemberID="viewController">
@@ -1519,24 +1484,7 @@
                             <outlet property="delegate" destination="2hT-yA-Spg" id="qJf-Ct-7sm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="erH-Z3-kM0">
-                        <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="bbg-mF-PFy">
-                            <rect key="frame" x="123.5" y="5.5" width="128" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugr-XF-Adr">
-                                    <rect key="frame" x="0.0" y="6" width="128" height="26"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
-                                    <color key="textColor" red="0.1764705882" green="0.20784313730000001" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        </view>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="About" id="erH-Z3-kM0"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="lblVersion" destination="vLA-kS-fQZ" id="O0V-gV-eJa"/>

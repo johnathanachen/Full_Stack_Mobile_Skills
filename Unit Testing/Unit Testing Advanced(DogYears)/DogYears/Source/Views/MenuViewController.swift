@@ -78,7 +78,10 @@ class MenuViewController: UITableViewController {
 		let mi = menu.itemAt(row: indexPath.row)
 		let sid = mi!.title + "View"
 		if let vc = storyboard?.instantiateViewController(withIdentifier: sid), let split = splitViewController {
-			split.showDetailViewController(vc, sender: self)
+			let nav = UINavigationController(rootViewController: vc)
+			vc.navigationItem.leftBarButtonItem = split.displayModeButtonItem
+			vc.navigationItem.leftItemsSupplementBackButton = true
+			split.showDetailViewController(nav, sender: self)
 		}
 	}
 }
