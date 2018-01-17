@@ -5,7 +5,20 @@ Full Stack Mobile Skills
 </h1>
 
 ## SWIFT
+
 ## XCODE
+### Debug and Breakpoints
+### Embed Frameworks
+### Project Infrastructure
+#### Workspace Project
+#### Schemes
+#### Targets
+#### Build Configurations
+#### Info.plist
+### Instruments
+#### Memory Leaks
+#### Zombie Objects
+
 ## iOS FRONTEND
 ## iOS SYSTEM
 ## BACKEND SKILLS
