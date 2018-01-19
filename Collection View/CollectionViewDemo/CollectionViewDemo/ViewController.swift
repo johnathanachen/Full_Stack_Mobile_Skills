@@ -21,7 +21,14 @@ class ViewController: UIViewController {
         layout.itemSize = CGSize(width: width, height: width)
     }
 
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailSegue" {
+            if let dest = segue.destination as? DetailsViewController,
+                let index = collectionView.indexPathsForSelectedItems?.first {
+                dest.selection = collectionData[index.row]
+            }
+        }
+    }
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -35,6 +42,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             label.text = collectionData[indexPath.row]
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let text = collectionData[indexPath.row]
+        
     }
     
     
