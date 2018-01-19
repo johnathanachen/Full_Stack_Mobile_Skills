@@ -93,6 +93,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="jyE-KR-G3x" id="5e4-6h-lhE"/>
+                                    <outlet property="delegate" destination="jyE-KR-G3x" id="5Ma-ag-n2J"/>
                                 </connections>
                             </tableView>
                         </subviews>

@@ -36,14 +36,14 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     
-    override func setEditing(_ editing: Bool, animated: Bool) {
-        super.setEditing(editing, animated: animated)
-        if editing {
-            setEditing(true, animated: true)
-        } else {
-            setEditing(false, animated: true)
-        }
-    }
+//    override func setEditing(_ editing: Bool, animated: Bool) {
+//        super.setEditing(editing, animated: animated)
+//        if editing {
+//            tableView.setEditing(true, animated: true)
+//        } else {
+//            tableView.setEditing(false, animated: true)
+//        }
+//    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -78,4 +78,5 @@ extension ViewController: UITableViewDataSource {
             
         }
     }
+    
 }
