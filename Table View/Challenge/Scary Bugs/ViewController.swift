@@ -23,17 +23,41 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let bugs = ScaryBug.bugs()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
 }
 
+extension ViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let bugSet = "Bugs"
+        return bugSet
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BugsCell", for: indexPath)
+        let bug = bugs[indexPath.row]
+        cell.textLabel?.text = bug.name
+        var factor = bug.howScary
+        var stringFactor = String(describing: factor)
+        cell.detailTextLabel?.text = stringFactor
+        cell.imageView?.image = bug.image
+    
+        return cell
+    
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return bugs.count
+    }
+}
