@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -78,15 +79,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PCV-Mq-Yt9">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jdc-tQ-uXa">
-                            <connections>
-                                <action selector="addItem" destination="BYZ-38-t0r" id="gTz-V1-1hb"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="jdc-tQ-uXa">
+                                <connections>
+                                    <action selector="addItem" destination="BYZ-38-t0r" id="gTz-V1-1hb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem enabled="NO" systemItem="trash" id="3gh-rO-gQV">
+                                <connections>
+                                    <action selector="deleteSelected" destination="BYZ-38-t0r" id="LI5-R3-Zem"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="jdc-tQ-uXa" id="Vtk-ov-r3c"/>
                         <outlet property="collectionView" destination="eop-dn-4Ph" id="eL8-ZH-SNZ"/>
+                        <outlet property="deleteButton" destination="3gh-rO-gQV" id="Hdg-8C-6dK"/>
                         <segue destination="N00-7h-mOy" kind="show" identifier="DetailSegue" id="vP5-K9-gHr"/>
                     </connections>
                 </viewController>

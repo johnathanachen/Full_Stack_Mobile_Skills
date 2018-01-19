@@ -9,7 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet private weak var deleteButton: UIBarButtonItem!
     @IBOutlet private weak var addButton: UIBarButtonItem!
+    @IBOutlet private weak var collectionView: UICollectionView!
+    
+    @IBAction func deleteSelected() {
+        if let selected = collectionView.indexPathsForSelectedItems {
+            let items = selected.map{$0.item}.sorted().reversed()
+            for item in items {
+                collectionData.remove(at: item)
+            }
+            collectionView.deleteItems(at: selected)
+        }
+    }
+    
     @IBAction func addItem() {
         collectionView.performBatchUpdates({
             for _ in 0..<2 {
@@ -20,7 +34,6 @@ class ViewController: UIViewController {
             }
         }, completion: nil)
     }
-    @IBOutlet private weak var collectionView: UICollectionView!
 
     var collectionData = ["1","2","3","4","5","6","7","8","9","10","11","12"]
     
@@ -43,6 +56,7 @@ class ViewController: UIViewController {
         layout.itemSize = CGSize(width: width, height: width)
         
         navigationItem.leftBarButtonItem = editButtonItem
+        navigationItem.rightBarButtonItem = deleteButton
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -56,6 +70,7 @@ class ViewController: UIViewController {
     
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
+        deleteButton.isEnabled = editing
         addButton.isEnabled = !editing
         
         collectionView.allowsMultipleSelection = editing
