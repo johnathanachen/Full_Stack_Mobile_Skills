@@ -39,6 +39,7 @@ class CollectionViewCell: UICollectionViewCell {
         didSet {
             if let park = park {
                 mainImage.image = UIImage(named: park.photo)
+                titleLabel.text = park.name
             }
         }
     }
