@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBAction func addItem() {
+        collectionView.performBatchUpdates({
+            for _ in 0..<2 {
+                let text = "\(collectionData.count + 1) 🐱"
+                collectionData.append(text)
+                let index = IndexPath(row: collectionData.count - 1, section: 0)
+                collectionView.insertItems(at: [index])
+            }
+        }, completion: nil)
+    }
     @IBOutlet private weak var collectionView: UICollectionView!
 
     var collectionData = ["1","2","3","4","5","6","7","8","9","10","11","12"]
