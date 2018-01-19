@@ -13,6 +13,7 @@
 		B82C6BBE2011CF8D009E22AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82C6BBD2011CF8D009E22AF /* Assets.xcassets */; };
 		B82C6BC12011CF8D009E22AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82C6BBF2011CF8D009E22AF /* LaunchScreen.storyboard */; };
 		B82C6BC92011D696009E22AF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82C6BC82011D696009E22AF /* DetailsViewController.swift */; };
+		B82C6BCB2011E058009E22AF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82C6BCA2011E058009E22AF /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B82C6BC02011CF8D009E22AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B82C6BC22011CF8D009E22AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B82C6BC82011D696009E22AF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B82C6BCA2011E058009E22AF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				B82C6BB62011CF8D009E22AF /* AppDelegate.swift */,
 				B82C6BB82011CF8D009E22AF /* ViewController.swift */,
+				B82C6BCA2011E058009E22AF /* CollectionViewCell.swift */,
 				B82C6BC82011D696009E22AF /* DetailsViewController.swift */,
 				B82C6BBA2011CF8D009E22AF /* Main.storyboard */,
 				B82C6BBD2011CF8D009E22AF /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			files = (
 				B82C6BB92011CF8D009E22AF /* ViewController.swift in Sources */,
 				B82C6BB72011CF8D009E22AF /* AppDelegate.swift in Sources */,
+				B82C6BCB2011E058009E22AF /* CollectionViewCell.swift in Sources */,
 				B82C6BC92011D696009E22AF /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
