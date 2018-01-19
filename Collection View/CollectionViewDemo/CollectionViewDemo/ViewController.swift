@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DetailSegue" {
             if let dest = segue.destination as? DetailsViewController,
-                let index = collectionView.indexPathsForSelectedItems?.first {
+                let index = sender as? IndexPath {
                 dest.selection = collectionData[index.row]
             }
         }
@@ -45,7 +45,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let text = collectionData[indexPath.row]
+        performSegue(withIdentifier: "DetailSegue", sender: indexPath)
         
     }
     
