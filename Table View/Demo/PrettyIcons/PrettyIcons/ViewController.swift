@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     var iconSets = [IconSet]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         iconSets = IconSet.iconSets()
+        navigationItem.rightBarButtonItem = editButtonItem
 
        
     }
@@ -27,6 +29,15 @@ class ViewController: UIViewController {
 }
 
 extension ViewController : UITableViewDataSource {
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if editing {
+            tableView.setEditing(true, animated: true)
+        } else {
+            tableView.setEditing(false, animated: true)
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return iconSets.count
@@ -60,5 +71,30 @@ extension ViewController : UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let set = iconSets[indexPath.section]
+            set.icons.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

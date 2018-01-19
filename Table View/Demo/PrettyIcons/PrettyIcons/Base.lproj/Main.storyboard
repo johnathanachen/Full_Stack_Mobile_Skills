@@ -106,6 +106,9 @@
                         <viewLayoutGuide key="safeArea" id="a5s-yH-KCA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pretty Icons" id="pSS-ae-2KV"/>
+                    <connections>
+                        <outlet property="tableView" destination="TZp-dC-Wv2" id="EpX-GN-dX7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Pm-VZ-Jb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

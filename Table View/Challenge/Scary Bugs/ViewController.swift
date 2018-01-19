@@ -24,32 +24,42 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let bugs = ScaryBug.bugs()
+    var bugs = ScaryBug.bugs()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    navigationItem.rightBarButtonItem = editButtonItem
   }
 
 }
 
 extension ViewController: UITableViewDataSource {
     
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if editing {
+            setEditing(true, animated: true)
+        } else {
+            setEditing(false, animated: true)
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let bugSet = "Bugs"
-        return bugSet
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        let bugSet = "Bugs"
+//        return bugSet
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BugsCell", for: indexPath)
         let bug = bugs[indexPath.row]
         cell.textLabel?.text = bug.name
-        var factor = bug.howScary
-        var stringFactor = String(describing: factor)
+        let factor = bug.howScary
+        let stringFactor = String(describing: factor)
         cell.detailTextLabel?.text = stringFactor
         cell.imageView?.image = bug.image
     
@@ -59,5 +69,13 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return bugs.count
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            bugs.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            
+        }
     }
 }
