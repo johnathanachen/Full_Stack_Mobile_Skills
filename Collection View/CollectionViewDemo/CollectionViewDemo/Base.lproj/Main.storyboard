@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eop-dn-4Ph">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tos-g3-DRP">
                                     <size key="itemSize" width="200" height="200"/>
@@ -78,20 +77,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem enabled="NO" systemItem="trash" id="3gh-rO-gQV">
+                            <connections>
+                                <action selector="deleteSelected" destination="BYZ-38-t0r" id="LI5-R3-Zem"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="PCV-Mq-Yt9">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="jdc-tQ-uXa">
-                                <connections>
-                                    <action selector="addItem" destination="BYZ-38-t0r" id="gTz-V1-1hb"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem enabled="NO" systemItem="trash" id="3gh-rO-gQV">
-                                <connections>
-                                    <action selector="deleteSelected" destination="BYZ-38-t0r" id="LI5-R3-Zem"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jdc-tQ-uXa">
+                            <connections>
+                                <action selector="addItem" destination="BYZ-38-t0r" id="gTz-V1-1hb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addButton" destination="jdc-tQ-uXa" id="Vtk-ov-r3c"/>
                         <outlet property="collectionView" destination="eop-dn-4Ph" id="eL8-ZH-SNZ"/>
@@ -136,13 +136,17 @@
         <!--Navigation Controller-->
         <scene sceneID="3CE-bD-q2a">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vzn-na-IJC" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="vzn-na-IJC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O8z-2J-t4Q">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1bq-j4-3Dh">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="icq-cK-DsT"/>
                     </connections>
