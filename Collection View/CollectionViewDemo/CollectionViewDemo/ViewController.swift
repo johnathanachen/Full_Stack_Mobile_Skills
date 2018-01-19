@@ -24,8 +24,20 @@ class ViewController: UIViewController {
 
     var collectionData = ["1","2","3","4","5","6","7","8","9","10","11","12"]
     
+    @objc func refresh() {
+        addItem()
+        collectionView.refreshControl?.endRefreshing()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // refresh the page upon pull down
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(self.refresh), for: UIControlEvents.valueChanged)
+        collectionView.refreshControl = refresh
+        
+        // set the layout to 3 columns
         let width = (view.frame.size.width - 20) / 3
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
