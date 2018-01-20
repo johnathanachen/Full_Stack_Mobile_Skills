@@ -8,7 +8,7 @@
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
  *
- * The above copyright notice and this permission notice shall be included in
+ ** The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
  *
  * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
@@ -42,6 +42,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let textColor = UIColor(asset: .navigationPrimary)
     UINavigationBar.appearance().tintColor = textColor
     UILabel.appearance(whenContainedInInstancesOf: [UITableViewHeaderFooterView.self]).textColor = textColor
+    
+    #if LITE_VERSION
+      print("LITE VERSION")
+      #else
+      print("FULL VERSION")
+      #endif 
     
     return true
   }

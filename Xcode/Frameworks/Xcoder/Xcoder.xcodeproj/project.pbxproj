@@ -27,37 +27,79 @@
 		8203DE651F11C99300CDEE87 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE431F11C95100CDEE87 /* SectionViewController.swift */; };
 		8203DE661F11C99300CDEE87 /* ShortcutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE461F11C95100CDEE87 /* ShortcutDetailViewController.swift */; };
 		8203DE671F11C99300CDEE87 /* ShortcutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE421F11C95100CDEE87 /* ShortcutsTableViewCell.swift */; };
-		8203DE681F11C99300CDEE87 /* ShortcutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE471F11C95100CDEE87 /* ShortcutsViewController.swift */; };
 		82F35FBD1F257EC2007678F8 /* CoreDataStackSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F35FBC1F257EC2007678F8 /* CoreDataStackSeed.swift */; };
-		B883625520130EEC00E946E3 /* Checkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B883625420130EBE00E946E3 /* Checkbox.framework */; };
-		B883625620130EEC00E946E3 /* Checkbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B883625420130EBE00E946E3 /* Checkbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C86F8111F469DA5002BCA34 /* Checkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C86F8101F469D7C002BCA34 /* Checkbox.framework */; };
+		8C86F8121F469DA5002BCA34 /* Checkbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C86F8101F469D7C002BCA34 /* Checkbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C9FAF5F1F4702E000FEB2CE /* Xcoder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE401F11C95100CDEE87 /* Xcoder.xcdatamodeld */; };
+		8C9FAF601F4702E000FEB2CE /* Shortcut+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE3F1F11C95100CDEE87 /* Shortcut+CoreDataProperties.swift */; };
+		8C9FAF611F4702E000FEB2CE /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE481F11C95100CDEE87 /* KeyboardButton.swift */; };
+		8C9FAF621F4702E000FEB2CE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE3A1F11C95100CDEE87 /* CoreDataStack.swift */; };
+		8C9FAF631F4702E000FEB2CE /* Section+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE3D1F11C95100CDEE87 /* Section+CoreDataProperties.swift */; };
+		8C9FAF641F4702E000FEB2CE /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE4A1F11C95100CDEE87 /* PDFViewController.swift */; };
+		8C9FAF651F4702E000FEB2CE /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE431F11C95100CDEE87 /* SectionViewController.swift */; };
+		8C9FAF661F4702E000FEB2CE /* ShortcutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE461F11C95100CDEE87 /* ShortcutDetailViewController.swift */; };
+		8C9FAF671F4702E000FEB2CE /* NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE4E1F11C95100CDEE87 /* NSManagedObject.swift */; };
+		8C9FAF681F4702E000FEB2CE /* Shortcut+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE3E1F11C95100CDEE87 /* Shortcut+CoreDataClass.swift */; };
+		8C9FAF691F4702E000FEB2CE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE501F11C95100CDEE87 /* UIColor.swift */; };
+		8C9FAF6A1F4702E000FEB2CE /* ShortcutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE421F11C95100CDEE87 /* ShortcutsTableViewCell.swift */; };
+		8C9FAF6B1F4702E000FEB2CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE221F11C4D500CDEE87 /* AppDelegate.swift */; };
+		8C9FAF6C1F4702E000FEB2CE /* Section+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE3C1F11C95100CDEE87 /* Section+CoreDataClass.swift */; };
+		8C9FAF6E1F4702E000FEB2CE /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE4F1F11C95100CDEE87 /* NSManagedObjectContext.swift */; };
+		8C9FAF6F1F4702E000FEB2CE /* CoreDataStackSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F35FBC1F257EC2007678F8 /* CoreDataStackSeed.swift */; };
+		8C9FAF711F4702E000FEB2CE /* Checkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C86F8101F469D7C002BCA34 /* Checkbox.framework */; };
+		8C9FAF731F4702E000FEB2CE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8203DE521F11C95100CDEE87 /* Colors.xcassets */; };
+		8C9FAF741F4702E000FEB2CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8203DE4B1F11C95100CDEE87 /* Images.xcassets */; };
+		8C9FAF751F4702E000FEB2CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8203DE2B1F11C4D500CDEE87 /* LaunchScreen.storyboard */; };
+		8C9FAF761F4702E000FEB2CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8203DE261F11C4D500CDEE87 /* Main.storyboard */; };
+		8C9FAF771F4702E000FEB2CE /* DataSeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 8203DE3B1F11C95100CDEE87 /* DataSeed.json */; };
+		8C9FAF791F4702E000FEB2CE /* Checkbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C86F8101F469D7C002BCA34 /* Checkbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C9FAF7F1F47038700FEB2CE /* ShortcutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE471F11C95100CDEE87 /* ShortcutsViewController.swift */; };
+		8C9FAF801F47038800FEB2CE /* ShortcutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203DE471F11C95100CDEE87 /* ShortcutsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B883625320130EBE00E946E3 /* PBXContainerItemProxy */ = {
+		8C86F80F1F469D7C002BCA34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B883624F20130EBE00E946E3 /* Checkbox.xcodeproj */;
+			containerPortal = 8C86F80B1F469D7C002BCA34 /* Checkbox.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = B8B0CC4320130BCC00FBEF7D;
+			remoteGlobalIDString = 8CE7A6E21F469B61006CD6A7;
 			remoteInfo = Checkbox;
 		};
-		B883625720130EEC00E946E3 /* PBXContainerItemProxy */ = {
+		8C86F8131F469DA5002BCA34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B883624F20130EBE00E946E3 /* Checkbox.xcodeproj */;
+			containerPortal = 8C86F80B1F469D7C002BCA34 /* Checkbox.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = B8B0CC4220130BCC00FBEF7D;
+			remoteGlobalIDString = 826072DC1F2C9ECF003EE936;
+			remoteInfo = Checkbox;
+		};
+		8C9FAF5D1F4702E000FEB2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C86F80B1F469D7C002BCA34 /* Checkbox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 826072DC1F2C9ECF003EE936;
 			remoteInfo = Checkbox;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B883625920130EEC00E946E3 /* Embed Frameworks */ = {
+		8C86F8151F469DA5002BCA34 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B883625620130EEC00E946E3 /* Checkbox.framework in Embed Frameworks */,
+				8C86F8121F469DA5002BCA34 /* Checkbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9FAF781F4702E000FEB2CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C9FAF791F4702E000FEB2CE /* Checkbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +133,9 @@
 		82F35FBC1F257EC2007678F8 /* CoreDataStackSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackSeed.swift; sourceTree = "<group>"; };
 		8C14F61F1F45CF42009737D5 /* Syntax.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Syntax.md; sourceTree = "<group>"; };
 		8C333BB81F46926600211E2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B883624F20130EBE00E946E3 /* Checkbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Checkbox.xcodeproj; path = ../Checkbox/Checkbox.xcodeproj; sourceTree = "<group>"; };
+		8C86F80B1F469D7C002BCA34 /* Checkbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Checkbox.xcodeproj; path = ../Checkbox/Checkbox.xcodeproj; sourceTree = "<group>"; };
+		8C9FAF7D1F4702E000FEB2CE /* Xcoder Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xcoder Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9FAF7E1F4702E000FEB2CE /* Xcoder copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Xcoder copy-Info.plist"; path = "/Users/xcoder/Desktop/Xcoder/Xcoder copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +143,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B883625520130EEC00E946E3 /* Checkbox.framework in Frameworks */,
+				8C86F8111F469DA5002BCA34 /* Checkbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9FAF701F4702E000FEB2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9FAF711F4702E000FEB2CE /* Checkbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,9 +161,10 @@
 		8203DE161F11C4D500CDEE87 = {
 			isa = PBXGroup;
 			children = (
-				B883624F20130EBE00E946E3 /* Checkbox.xcodeproj */,
+				8C86F80B1F469D7C002BCA34 /* Checkbox.xcodeproj */,
 				8203DE211F11C4D500CDEE87 /* Xcoder */,
 				8203DE201F11C4D500CDEE87 /* Products */,
+				8C9FAF7E1F4702E000FEB2CE /* Xcoder copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				8203DE1F1F11C4D500CDEE87 /* Xcoder.app */,
+				8C9FAF7D1F4702E000FEB2CE /* Xcoder Lite.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,10 +225,10 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B883625020130EBE00E946E3 /* Products */ = {
+		8C86F80C1F469D7C002BCA34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B883625420130EBE00E946E3 /* Checkbox.framework */,
+				8C86F8101F469D7C002BCA34 /* Checkbox.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,16 +243,35 @@
 				8203DE1B1F11C4D500CDEE87 /* Sources */,
 				8203DE1C1F11C4D500CDEE87 /* Frameworks */,
 				8203DE1D1F11C4D500CDEE87 /* Resources */,
-				B883625920130EEC00E946E3 /* Embed Frameworks */,
+				8C86F8151F469DA5002BCA34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B883625820130EEC00E946E3 /* PBXTargetDependency */,
+				8C86F8141F469DA5002BCA34 /* PBXTargetDependency */,
 			);
 			name = Xcoder;
 			productName = Xcoder;
 			productReference = 8203DE1F1F11C4D500CDEE87 /* Xcoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C9FAF5B1F4702E000FEB2CE /* Xcoder Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C9FAF7A1F4702E000FEB2CE /* Build configuration list for PBXNativeTarget "Xcoder Lite" */;
+			buildPhases = (
+				8C9FAF5E1F4702E000FEB2CE /* Sources */,
+				8C9FAF701F4702E000FEB2CE /* Frameworks */,
+				8C9FAF721F4702E000FEB2CE /* Resources */,
+				8C9FAF781F4702E000FEB2CE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C9FAF5C1F4702E000FEB2CE /* PBXTargetDependency */,
+			);
+			name = "Xcoder Lite";
+			productName = Xcoder;
+			productReference = 8C9FAF7D1F4702E000FEB2CE /* Xcoder Lite.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -229,23 +302,24 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B883625020130EBE00E946E3 /* Products */;
-					ProjectRef = B883624F20130EBE00E946E3 /* Checkbox.xcodeproj */;
+					ProductGroup = 8C86F80C1F469D7C002BCA34 /* Products */;
+					ProjectRef = 8C86F80B1F469D7C002BCA34 /* Checkbox.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
 				8203DE1E1F11C4D500CDEE87 /* Xcoder */,
+				8C9FAF5B1F4702E000FEB2CE /* Xcoder Lite */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B883625420130EBE00E946E3 /* Checkbox.framework */ = {
+		8C86F8101F469D7C002BCA34 /* Checkbox.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Checkbox.framework;
-			remoteRef = B883625320130EBE00E946E3 /* PBXContainerItemProxy */;
+			remoteRef = 8C86F80F1F469D7C002BCA34 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -263,6 +337,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C9FAF721F4702E000FEB2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9FAF731F4702E000FEB2CE /* Colors.xcassets in Resources */,
+				8C9FAF741F4702E000FEB2CE /* Images.xcassets in Resources */,
+				8C9FAF751F4702E000FEB2CE /* LaunchScreen.storyboard in Resources */,
+				8C9FAF761F4702E000FEB2CE /* Main.storyboard in Resources */,
+				8C9FAF771F4702E000FEB2CE /* DataSeed.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -271,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8203DE5C1F11C98100CDEE87 /* Xcoder.xcdatamodeld in Sources */,
+				8C9FAF7F1F47038700FEB2CE /* ShortcutsViewController.swift in Sources */,
 				8203DE5B1F11C97700CDEE87 /* Shortcut+CoreDataProperties.swift in Sources */,
 				8203DE621F11C99300CDEE87 /* KeyboardButton.swift in Sources */,
 				8203DE561F11C97700CDEE87 /* CoreDataStack.swift in Sources */,
@@ -284,19 +371,47 @@
 				8203DE671F11C99300CDEE87 /* ShortcutsTableViewCell.swift in Sources */,
 				8203DE231F11C4D500CDEE87 /* AppDelegate.swift in Sources */,
 				8203DE581F11C97700CDEE87 /* Section+CoreDataClass.swift in Sources */,
-				8203DE681F11C99300CDEE87 /* ShortcutsViewController.swift in Sources */,
 				8203DE5E1F11C98500CDEE87 /* NSManagedObjectContext.swift in Sources */,
 				82F35FBD1F257EC2007678F8 /* CoreDataStackSeed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9FAF5E1F4702E000FEB2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9FAF5F1F4702E000FEB2CE /* Xcoder.xcdatamodeld in Sources */,
+				8C9FAF801F47038800FEB2CE /* ShortcutsViewController.swift in Sources */,
+				8C9FAF601F4702E000FEB2CE /* Shortcut+CoreDataProperties.swift in Sources */,
+				8C9FAF611F4702E000FEB2CE /* KeyboardButton.swift in Sources */,
+				8C9FAF621F4702E000FEB2CE /* CoreDataStack.swift in Sources */,
+				8C9FAF631F4702E000FEB2CE /* Section+CoreDataProperties.swift in Sources */,
+				8C9FAF641F4702E000FEB2CE /* PDFViewController.swift in Sources */,
+				8C9FAF651F4702E000FEB2CE /* SectionViewController.swift in Sources */,
+				8C9FAF661F4702E000FEB2CE /* ShortcutDetailViewController.swift in Sources */,
+				8C9FAF671F4702E000FEB2CE /* NSManagedObject.swift in Sources */,
+				8C9FAF681F4702E000FEB2CE /* Shortcut+CoreDataClass.swift in Sources */,
+				8C9FAF691F4702E000FEB2CE /* UIColor.swift in Sources */,
+				8C9FAF6A1F4702E000FEB2CE /* ShortcutsTableViewCell.swift in Sources */,
+				8C9FAF6B1F4702E000FEB2CE /* AppDelegate.swift in Sources */,
+				8C9FAF6C1F4702E000FEB2CE /* Section+CoreDataClass.swift in Sources */,
+				8C9FAF6E1F4702E000FEB2CE /* NSManagedObjectContext.swift in Sources */,
+				8C9FAF6F1F4702E000FEB2CE /* CoreDataStackSeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B883625820130EEC00E946E3 /* PBXTargetDependency */ = {
+		8C86F8141F469DA5002BCA34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Checkbox;
-			targetProxy = B883625720130EEC00E946E3 /* PBXContainerItemProxy */;
+			targetProxy = 8C86F8131F469DA5002BCA34 /* PBXContainerItemProxy */;
+		};
+		8C9FAF5C1F4702E000FEB2CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Checkbox;
+			targetProxy = 8C9FAF5D1F4702E000FEB2CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -428,7 +543,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3L8W3EB4SJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Xcoder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Xcoder;
@@ -443,10 +558,42 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3L8W3EB4SJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Xcoder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Xcoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8C9FAF7B1F4702E000FEB2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Lite";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Xcoder copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DLITE_VERSION";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Xcoder-Lite";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8C9FAF7C1F4702E000FEB2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Lite";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Xcoder copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DLITE_VERSION";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.Xcoder-Lite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -470,6 +617,15 @@
 			buildConfigurations = (
 				8203DE321F11C4D500CDEE87 /* Debug */,
 				8203DE331F11C4D500CDEE87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C9FAF7A1F4702E000FEB2CE /* Build configuration list for PBXNativeTarget "Xcoder Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9FAF7B1F4702E000FEB2CE /* Debug */,
+				8C9FAF7C1F4702E000FEB2CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

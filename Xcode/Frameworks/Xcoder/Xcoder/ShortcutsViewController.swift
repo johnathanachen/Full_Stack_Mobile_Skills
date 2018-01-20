@@ -33,6 +33,7 @@ import UIKit
 import CoreData
 import Checkbox
 
+
 class ShortcutsViewController: UIViewController {
   
   var isFiltered = false
@@ -49,6 +50,11 @@ class ShortcutsViewController: UIViewController {
     let fetchRequest: NSFetchRequest<Shortcut> = Shortcut.fetchRequest()
     fetchRequest.sortDescriptors = [NSSortDescriptor(key: Section.sortByNameKey,
                                                      ascending: true)]
+    
+    #if LITE_VERSION
+      fetchRequest.fetchLimit = 5
+      #endif
+    
     let fetchedResultsController =
       NSFetchedResultsController(fetchRequest: fetchRequest,
                                  managedObjectContext: self.managedObjectContext,

@@ -32,6 +32,7 @@ import Foundation
 import CoreData
 import Checkbox
 
+
 @objc(Shortcut)
 public class Shortcut: NSManagedObject {
   public static var filterByKey = "filterRaw"
