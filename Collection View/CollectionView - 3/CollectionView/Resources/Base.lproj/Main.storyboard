@@ -39,7 +39,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jCR-1y-Yvw">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jCR-1y-Yvw" customClass="FlowLayout" customModule="CollectionView" customModuleProvider="target">
                             <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="50" height="40"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -128,14 +128,14 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgZ-W9-s0I">
-                                            <rect key="frame" x="42" y="0.0" width="274" height="34"/>
+                                            <rect key="frame" x="42" y="0.0" width="267.5" height="34"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-FY-lVA">
-                                            <rect key="frame" x="324" y="0.0" width="35" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                            <rect key="frame" x="317.5" y="0.0" width="41.5" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -149,8 +149,8 @@
                                 <constraint firstAttribute="trailing" secondItem="GIY-HB-UrP" secondAttribute="trailing" constant="8" id="bFJ-5b-PbT"/>
                             </constraints>
                             <connections>
-                                <outlet property="countLabel" destination="4ag-FY-lVA" id="fpF-cM-K5O"/>
-                                <outlet property="flagImage" destination="aM7-EW-jb5" id="hyx-QL-mlQ"/>
+                                <outlet property="countLabel" destination="4ag-FY-lVA" id="LgU-mm-tfB"/>
+                                <outlet property="flagImage" destination="aM7-EW-jb5" id="sY6-xC-Pyg"/>
                                 <outlet property="titleLabel" destination="DgZ-W9-s0I" id="7jU-uR-CC5"/>
                             </connections>
                         </collectionReusableView>

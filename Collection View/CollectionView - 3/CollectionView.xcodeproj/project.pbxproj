@@ -10,6 +10,7 @@
 		0A1D46AF1F6F1CDD00CEE36F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D46AE1F6F1CDD00CEE36F /* SectionHeader.swift */; };
 		0A7301CF1F6F197D00945F8E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD36E571F6DE9080059CBE5 /* GradientView.swift */; };
 		B81DE1D52012DD230098D7E9 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81DE1D42012DD230098D7E9 /* Section.swift */; };
+		B81DE1D82012E0A50098D7E9 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81DE1D72012E0A50098D7E9 /* FlowLayout.swift */; };
 		DD0D05AB1F4C2099009013A8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D05AA1F4C2099009013A8 /* CollectionViewCell.swift */; };
 		DD222DD01F4A803B00F2ECA9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD222DCF1F4A803B00F2ECA9 /* DetailViewController.swift */; };
 		DD5634E31F4D7DC300D950CD /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5634E21F4D7DC300D950CD /* DataSource.swift */; };
@@ -26,6 +27,7 @@
 		0A1D46AE1F6F1CDD00CEE36F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		0AD36E571F6DE9080059CBE5 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B81DE1D42012DD230098D7E9 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		B81DE1D72012E0A50098D7E9 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		DD0D05AA1F4C2099009013A8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DD222DCF1F4A803B00F2ECA9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DD5634E21F4D7DC300D950CD /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 				0AD36E571F6DE9080059CBE5 /* GradientView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B81DE1D62012E0680098D7E9 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				B81DE1D72012E0A50098D7E9 /* FlowLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		DD5634DF1F4D7CB300D950CD /* View Controllers */ = {
@@ -119,6 +129,7 @@
 		DD8169AB1F45326700FD949C /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				B81DE1D62012E0680098D7E9 /* Layout */,
 				0AD36E561F6DE8F20059CBE5 /* Views */,
 				DD5634E81F4D830200D950CD /* Cells */,
 				DD5634E11F4D7CF100D950CD /* Data */,
@@ -210,6 +221,7 @@
 				DD0D05AB1F4C2099009013A8 /* CollectionViewCell.swift in Sources */,
 				0A1D46AF1F6F1CDD00CEE36F /* SectionHeader.swift in Sources */,
 				0A7301CF1F6F197D00945F8E /* GradientView.swift in Sources */,
+				B81DE1D82012E0A50098D7E9 /* FlowLayout.swift in Sources */,
 				DD5634E31F4D7DC300D950CD /* DataSource.swift in Sources */,
 				DD8169AD1F45326700FD949C /* AppDelegate.swift in Sources */,
 			);
@@ -350,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AHGBQG56X6;
+				DEVELOPMENT_TEAM = 3L8W3EB4SJ;
 				INFOPLIST_FILE = CollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.CollectionView;
@@ -367,7 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AHGBQG56X6;
+				DEVELOPMENT_TEAM = 3L8W3EB4SJ;
 				INFOPLIST_FILE = CollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.CollectionView;

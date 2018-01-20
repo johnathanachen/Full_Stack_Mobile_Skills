@@ -84,6 +84,8 @@ class MainViewController: UICollectionViewController {
 	
 	@IBAction func addItem() {
 		let index = dataSource.indexPathForNewRandomPark()
+        let layout = collectionView?.collectionViewLayout as! FlowLayout
+        layout.addedItem = index
 		collectionView?.insertItems(at: [index])
 	}
 	
