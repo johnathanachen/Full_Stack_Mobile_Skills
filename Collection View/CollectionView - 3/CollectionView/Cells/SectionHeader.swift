@@ -2,19 +2,22 @@
 //  SectionHeader.swift
 //  CollectionView
 //
-//  Created by Johnathan Chen on 1/19/18.
-//  Copyright © 2018 Razeware. All rights reserved.
+//  Created by Catie Catterwaul on 9/17/17.
+//  Copyright © 2017 Razeware. All rights reserved.
 //
 
 import UIKit
 
 class SectionHeader: UICollectionReusableView {
-    @IBOutlet private weak var titleLabel: UILabel!
-    
-    var title: String? {
-        didSet {
-            titleLabel.text = title
+    @IBOutlet private weak var flagImage: UIImageView!
+	@IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var countLabel: UILabel!
+	
+	var section: Section! {
+		didSet {
+			titleLabel.text = section.title
+            flagImage.image = UIImage(named: section.title ?? "")
+            countLabel.text = "\(section.count)"
         }
-    }
+	}
 }
-

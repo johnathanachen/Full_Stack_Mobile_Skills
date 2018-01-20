@@ -42,7 +42,7 @@ class MainViewController: UICollectionViewController {
 		let width = view.frame.size.width / 3
 		let layout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
 		layout.itemSize = CGSize(width:width, height:width)
-        layout.sectionHeadersPinToVisibleBounds = true
+		layout.sectionHeadersPinToVisibleBounds = true
 		// Refresh control
 		let refresh = UIRefreshControl()
 		refresh.addTarget(self, action: #selector(self.refresh), for: UIControlEvents.valueChanged)
@@ -83,7 +83,7 @@ class MainViewController: UICollectionViewController {
 	}
 	
 	@IBAction func addItem() {
-		let index = dataSource.newRandomPark()
+		let index = dataSource.indexPathForNewRandomPark()
 		collectionView?.insertItems(at: [index])
 	}
 	
@@ -102,16 +102,19 @@ class MainViewController: UICollectionViewController {
 }
 
 extension MainViewController {
-    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeader
-        view.title = dataSource.titleForSectionAtIndexPath(indexPath)
-        return view
-    }
-    
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return dataSource.numberOfSections
-    }
-    
+	override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+		let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeader
+		let section = Section()
+        section.title = dataSource.titleForSectionAtIndexPath(indexPath)
+        section.count = dataSource.numberOfParksInSection(indexPath.section)
+        view.section = section
+		return view
+	}
+	
+	override func numberOfSections(in collectionView: UICollectionView) -> Int {
+		return dataSource.numberOfSections
+	}
+	
 	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return dataSource.numberOfParksInSection(section)
 	}
@@ -140,3 +143,13 @@ extension MainViewController {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
