@@ -38,6 +38,7 @@ class MainViewController: UICollectionViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        installsStandardGestureForInteractiveMovement = true
 		// Set up a 3-column Collection View
 		let width = view.frame.size.width / 3
 		let layout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
@@ -86,8 +87,12 @@ class MainViewController: UICollectionViewController {
 		let index = dataSource.indexPathForNewRandomPark()
         let layout = collectionView?.collectionViewLayout as! FlowLayout
         layout.addedItem = index
-		collectionView?.insertItems(at: [index])
-	}
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 0.65, initialSpringVelocity: 0.0, options: [], animations: {
+            self.collectionView?.insertItems(at: [index])
+        }) { (finished) in
+            layout.addedItem = nil
+    }
+}
 	
 	@objc func refresh() {
 		addItem()
@@ -96,6 +101,9 @@ class MainViewController: UICollectionViewController {
 	
 	@IBAction func deleteSelected() {
 		if let selected = collectionView?.indexPathsForSelectedItems {
+            let layout = collectionView?.collectionViewLayout as! FlowLayout
+            layout.deletedItems = selected
+            
 			dataSource.deleteItemsAtIndexPaths(selected)
 			collectionView?.deleteItems(at: selected)
 			navigationController?.isToolbarHidden = true
@@ -104,6 +112,11 @@ class MainViewController: UICollectionViewController {
 }
 
 extension MainViewController {
+    
+    override func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        dataSource.moveParkAtIndexPath(sourceIndexPath, toIndexPath: destinationIndexPath)
+    }
+    
 	override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeader
 		let section = Section()

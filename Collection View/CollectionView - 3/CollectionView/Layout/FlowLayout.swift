@@ -10,6 +10,21 @@ import UIKit
 
 class FlowLayout: UICollectionViewFlowLayout {
     var addedItem: IndexPath?
+    var deletedItems: [IndexPath]?
+    
+    override func finalLayoutAttributesForDisappearingItem(at itemIndexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        guard let attributes = super.finalLayoutAttributesForDisappearingItem(at: itemIndexPath),
+        let deleted = deletedItems,
+            deleted.contains(itemIndexPath) else {
+                return nil
+        }
+        attributes.alpha = 1.0
+        attributes.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        attributes.zIndex = -1
+        
+        
+        return attributes
+    }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         var result = [UICollectionViewLayoutAttributes]()
